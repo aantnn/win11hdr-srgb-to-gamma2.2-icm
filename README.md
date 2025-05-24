@@ -15,17 +15,7 @@ As of version 22H2, Windows 11 does not allow us to pick which tone curve to use
 
 Because it's so prolific, almost all web content and computer games are color graded using a gamma-2.2 outputting monitor, intentionally or not. For Microsoft to decide using piecewise sRGB as the virtual SDR curve was a mistake; it forcibly renders almost all apps and web content to look incorrect, some more than others.
 
-As an example, we can take a look at Diablo IV, a game that is meant to be dark and gritty.
 
-| ![Diablo IV in HDR (sRGB tone curve)](./d4_srgb.png) |
-| ---------------------------------------------------- |
-| _Diablo IV in HDR (sRGB tone curve)_                 |
-
-| ![Diablo IV in SDR (gamma 2.2 tone curve)](./d4_gamma2p2.png) |
-| ------------------------------------------------------------- |
-| _Diablo IV in SDR (gamma 2.2 tone curve)_                     |
-
-Diablo IV looks absolutely spectacular in SDR, with deep shadow detail and excellent use of dithering to prevent blacks from appearing blotchy.
 
 On the other hand, there have been countless complaints about the game looking washed out when HDR is enabled, swaying many players to simply enjoy the game in SDR. When HDR is enabled, rich blacks turn into dull grays, and the game's atmosphere turns hazy, losing much of its depth. The primary cause of this is — _you guessed it_ — the piecewise sRGB tone curve that Windows uses in HDR.
 
